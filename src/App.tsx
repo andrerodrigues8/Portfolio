@@ -8,7 +8,7 @@ function App() {
   const [language, setLanguage] = useState<Language>("en");
  return(
     <>
-      <div className="min-h-screen bg-linear-to-br from-cyan-500 to-blue-950">
+      <div className="min-h-screen bg-linear-to-br from-cyan-500 to-blue-950 overflow-hidden">
         <Header changeLanguage={(language)=>setLanguage(language)} language={language}/>
         <About language={language}/>
         <Skills language={language}/>

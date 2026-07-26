@@ -38,7 +38,7 @@ function Skills({ language }: AboutProps) {
       <div className="text-center mt-15 m-auto" id="skills">
         <div>
           <h3 className="font-bold text-xl text-white mb-5">{text[language].languages}</h3>
-          <ul className="flex justify-center gap-10 text-white font-raleway mt-8 mb-12">
+          <ul className="flex justify-center gap-10 text-white font-raleway mt-8 mb-15">
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <FontAwesomeIcon className=" fa-3x mb-1" icon={faPython} />
               <p>Python</p>
@@ -79,7 +79,7 @@ function Skills({ language }: AboutProps) {
       
         <div>
           <h3 className="font-bold text-xl text-white mb-5">{text[language].web}</h3>
-          <ul className="flex justify-center gap-10 text-white font-raleway mt-8 mb-12">
+          <ul className="flex justify-center gap-10 text-white font-raleway mt-8 mb-15">
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <FontAwesomeIcon className="fa-3x mb-1" icon={faReact} />
               <p>React</p>
@@ -141,7 +141,7 @@ function Skills({ language }: AboutProps) {
         </div>
         <div>
           <h3 className="font-bold text-xl text-white mb-5">{text[language].misc}</h3>
-          <ul className="flex justify-center text-white gap-10 font-raleway mt-8 mb-12">
+          <ul className="flex justify-center text-white gap-10 font-raleway mt-8 mb-15">
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <FontAwesomeIcon className="fa-3x mb-1" icon={faUnity} />
               <p>Unity</p>
