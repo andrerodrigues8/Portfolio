@@ -1,20 +1,37 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 type Props = {
   title: string;
+  description: string;
+  link: string;
+  techImages: React.ReactNode[];
 };
-function ProjectDescription({ title }: Props) {
+function ProjectDescription({ title, description, link, techImages }: Props) {
   return (
     <div className="flex-1 text-left m-2 text-white">
-      <div className="flex justify-between items-center flex-row">Synertics - Web Application</div>
-      <div>
-        <span>Symbol</span>
+      <div className="flex justify-between items-center flex-row">
+        <h3 className="text-xl font-bold">{title}</h3>
+        <div>
+          <a
+            href={link}
+            className="text-2xl mx-1 transition duration-300 hover:text-indigo-800"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          </a>
+        </div>
       </div>
-      <hr />
-      <p className="block my-4 mx-0">Synertics is a web application that automatically collects and tracks Greek electricity market prices. It helps users easily view daily market trends, check price changes, and get up-to-date energy insights through an easy-to-use interface and mobile-friendly design.
-        <br />
-        <br />
-        The app is built using the Django framework for its core structure and PostgreSQL to store all data safely. It uses Celery and Redis to run background scraping tasks every day, and runs inside Docker containers so it can be set up easily on any computer.
-
-      </p>
+      <div className="flex flex-wrap">
+        {techImages.map((image) => (
+          <span
+            className="bg-indigo-800 inline-flex items-center py-1 px-2 rounded-md text-sm font-bold m-1 text-center cursor-default"
+          >
+            {image}
+          </span>
+        ))}
+      </div>
+      <hr className="my-2 border-t border-[#CCCCCC]" />
+      <p className="block mx-0 whitespace-pre-line">{description}</p>
     </div>
   );
 }
