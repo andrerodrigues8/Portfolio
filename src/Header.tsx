@@ -54,7 +54,7 @@ function Header({changeLanguage,language}:HeaderProps) {
       <div className="flex justify-center gap-8 mt-10">
         <a
           className="inline-block w-11 h-11 bg-white rounded-3xl text-center leading-11 text-xl transition duration-500 hover:scale-110 hover:bg-indigo-600"
-          href="https://www.linkedin.com/in/andré-rodrigues-b45009359"
+          href="https://www.linkedin.com/in/andre-rodrigues-b45009359"
           target="_blank"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
