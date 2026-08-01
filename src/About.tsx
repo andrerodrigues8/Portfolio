@@ -2,7 +2,7 @@ import type { Language } from "./App";
 const text = {
   pt: {
     about:
-      "Olá, sou o André, estudante de Mestrado em Engenharia Informática, com especialização em Engenharia de Software. Sou também licenciado em Engenharia Física, formação que me proporcionou uma base sólida em sistemas embebidos. O meu principal interesse é a engenharia de software, em particular o desenvolvimento web, mas também gosto de desenvolver jogos e projetos de sistemas embebidos.",
+      "Olá, eu sou o André, estudante de Mestrado em Engenharia Informática, com especialização em Engenharia de Software. Sou também licenciado em Engenharia Física, formação que me proporcionou uma base sólida em sistemas embebidos. O meu principal interesse é a engenharia de software, em particular o desenvolvimento web, mas também gosto de desenvolver jogos e projetos de sistemas embebidos.",
   },
   en: {
     about:

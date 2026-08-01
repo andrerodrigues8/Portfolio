@@ -3,6 +3,9 @@ import { useState } from 'react';
 import About from './About'
 import Header from './Header'
 import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
+import Footer from './Footer';
 export type Language = "en" | "pt";
 function App() {
   const [language, setLanguage] = useState<Language>("en");
@@ -12,6 +15,9 @@ function App() {
         <Header changeLanguage={(language)=>setLanguage(language)} language={language}/>
         <About language={language}/>
         <Skills language={language}/>
+        <Projects language={language}/>
+        <Contact language={language}/>
+        <Footer/>
       </div>
     </>
  )

@@ -16,7 +16,7 @@ import {
   faTypescript,
   faUnity,
 } from "@fortawesome/free-brands-svg-icons";
-import IconImage from "./IconImage";
+import IconImage from "./Component_Templates/IconImage";
 const text = {
   pt: {
     languages: "Linguagens de Programação",
@@ -35,7 +35,7 @@ interface AboutProps {
 function Skills({ language }: AboutProps) {
   return (
     <>
-      <div className="text-center mt-15 m-auto" id="skills">
+      <div className="text-center my-15" id="skills">
         <div>
           <h3 className="font-bold text-xl text-white mb-5">{text[language].languages}</h3>
           <ul className="flex justify-center gap-10 text-white font-raleway mt-8 mb-15">
@@ -49,7 +49,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="cplus.svg"
+                src="logos/cplus.svg"
                 alt="C++ Icon"
                 className="w-[3em] h-[3em] "
               />
@@ -90,7 +90,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="next.svg"
+                src="logos/next.svg"
                 alt="NextJS Icon"
                 className="w-[2.9em]  h-[2.9em] "
               />
@@ -98,7 +98,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="vite.svg"
+                src="logos/vite.svg"
                 alt="Vite Icon"
                 className="w-[2.9em] h-[2.9em] "
               />
@@ -114,7 +114,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="flask.svg"
+                src="logos/flask.svg"
                 alt="Flask Icon"
                 className="w-[3em] h-[3em] "
               />
@@ -122,7 +122,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="django.svg"
+                src="logos/django.svg"
                 alt="Django Icon"
                 className="w-[5em] h-[3em] "
               />
@@ -130,7 +130,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="springboot.svg"
+                src="logos/springboot.svg"
                 alt="Spring Boot Icon"
                 className="w-[3em] h-[3em] "
               />
@@ -148,7 +148,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="arduino.svg"
+                src="logos/arduino.svg"
                 alt="Arduino Icon"
                 className="w-[3em] h-[3em] "
               />
@@ -156,7 +156,7 @@ function Skills({ language }: AboutProps) {
             </li>
             <li className="group h-10 text-center transition duration-300 hover:scale-110 hover:text-indigo-800">
               <IconImage
-                src="firebase.svg"
+                src="logos/firebase.svg"
                 alt="FireBase Icon"
                 className="w-[3em] h-[3em] "
               />
