@@ -21,6 +21,9 @@ const text = {
     title_GeoDummy: "GeoDummy - Aplicação Web",
     description_GeoDummy:
       "GeoDummy é uma aplicação web para visualização, exploração e análise de dados geoespaciais, desenvolvida para ser acessível a geógrafos e investigadores com pouca ou nenhuma experiência de programação. Suporta formatos GeoTIFF, GeoPackage e GeoJSON, permitindo aos utilizadores sobrepor e gerir várias camadas vetoriais e raster sobre basemaps personalizáveis, visualizar tabelas de atributos e executar scripts Python personalizados diretamente na interface, sem necessidade de programar.\n\nA aplicação corre em contentores Docker, facilitando a instalação em qualquer computador, através de um instalador dedicado que trata das dependências automaticamente. Este projeto foi desenvolvido no âmbito de um mestrado, por uma equipa de 12 pessoas. Fiz parte da equipa de frontend, embora tenha contribuído um pouco em todo o projeto.",
+    title_PsibilitAI: "PsibilitAI - Aplicação Web",
+    description_PsibilitAI:
+      "O PsibilitAI é uma plataforma web concebida para ajudar os psicólogos da Psibilitar a gerir registos de pacientes e a gerar documentação clínica com o apoio de IA. Suporta todo o fluxo de trabalho terapêutico, desde o preenchimento dos dados dos pacientes até à geração de relatórios clínicos formais utilizando modelos de linguagem de grande dimensão. Uma das funcionalidades principais é um pipeline de otimização de prompts que melhora continuamente a qualidade dos resultados gerados pela IA com base no feedback dos terapeutas.\n\nA plataforma foi desenvolvida com Next.js e TypeScript, utilizando o Firebase para autenticação e armazenamento de dados, e integra múltiplos fornecedores de modelos de linguagem. Este projeto foi desenvolvido durante um estágio de um ano na DoIT, no âmbito do mestrado. Fiz parte de uma pequena equipa, sendo que o meu orientador e eu realizámos a maior parte do levantamento de requisitos, da arquitetura, do desenvolvimento e dos testes.",
   },
   en: {
     projects: "Projects",
@@ -31,7 +34,11 @@ const text = {
     description_RunStats:
       "RunStats is a mobile application for runners to track their race statistics over time. It lets users log key details for each race and automatically highlights their best performance. Through simple, easy-to-read charts, users can visualize how their pace and distance have evolved across their races, all within a clean, mobile-friendly interface.\n\nThe app is built with Flutter, allowing it to run smoothly on Android devices, and is currently available as a lightweight, easy-to-install APK.",
     title_GeoDummy: "GeoDummy - Web Application",
-    description_GeoDummy: "GeoDummy is a web application for visualizing, exploring, and analyzing geospatial data, built to be accessible to geographers and researchers with little to no programming experience. It supports GeoTIFF, GeoPackage, and GeoJSON formats, letting users overlay and manage multiple vector and raster layers on customizable basemaps, view attribute tables, and run custom Python scripts directly through the interface without writing code.\n\nThe app runs inside Docker containers for easy setup on any computer, with a dedicated installer that handles dependencies automatically. This project was developed as part of a master's course, by a team of 12 people. I was part of the frontend team, though I contributed a bit across the whole project.",
+    description_GeoDummy:
+      "GeoDummy is a web application for visualizing, exploring, and analyzing geospatial data, built to be accessible to geographers and researchers with little to no programming experience. It supports GeoTIFF, GeoPackage, and GeoJSON formats, letting users overlay and manage multiple vector and raster layers on customizable basemaps, view attribute tables, and run custom Python scripts directly through the interface without writing code.\n\nThe app runs inside Docker containers for easy setup on any computer, with a dedicated installer that handles dependencies automatically. This project was developed as part of a master's course, by a team of 12 people. I was part of the frontend team, though I contributed a bit across the whole project.",
+    title_PsibilitAI: "PsibilitAI - Web Application",
+    description_PsibilitAI:
+      "PsibilitAI is a web platform designed to help psychologists at Psibilitar manage patient records and generate AI-assisted clinical documentation. It supports the full therapy workflow, from filling patient data, to generating formal clinical reports using large language models. A core feature is a prompt optimization pipeline that continuously improves AI output quality based on therapist feedback.\n\nThe platform was built with Next.js and TypeScript, using Firebase for authentication and data storage, and integrates with multiple LLM providers. This project was developed during a one-year internship at DoIT as part of a master's degree. I was part of a small team, with my advisor and I contributing most of the requirements gathering, architecture design, development, and testing.",
   },
 };
 interface AboutProps {
@@ -112,6 +119,33 @@ function Projects({ language }: AboutProps) {
                 />,
                 <FontAwesomeIcon icon={faTypescript} />,
                 <FontAwesomeIcon icon={faPython} />,
+              ]}
+            />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectImage>
+              <img
+                src="projects/psibilitar1.png"
+                alt="PsibilitAI App Image"
+                className="w-full h-full object-cover"
+              />
+            </ProjectImage>
+            <ProjectDescription
+              title={text[language].title_PsibilitAI}
+              description={text[language].description_PsibilitAI}
+              link="https://psibilitar.pt/pt"
+              techImages={[
+                <img
+                src="logos/next.svg"
+                alt="NextJS Icon"
+                className="w-[1.5em]  h-[1em] "
+              />,
+              <img
+                src="logos/firebase.svg"
+                alt="Firebase Icon"
+                className="w-[1.5em]  h-[1em] "
+              />,
+                <FontAwesomeIcon icon={faTypescript} />,
               ]}
             />
           </ProjectCard>
